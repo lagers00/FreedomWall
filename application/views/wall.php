@@ -24,7 +24,7 @@
 		<div class="post">
 			<textarea class="postBox" placeholder="Post on the Freedom Wall!"></textarea>
 			<div class="postFooter">
-				<input class="username" placeholder="Your Username">
+				<input type="text" class="username" placeholder="Your Username">
 				<button class="postButton"> Post </button>
 			</div>
 		</div>

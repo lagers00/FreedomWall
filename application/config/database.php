@@ -48,12 +48,12 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = '192.168.1.101';
-// $db['default']['hostname'] = 'localhost';
+// $db['default']['hostname'] = '192.168.1.212';
+$db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
- $db['default']['password'] = 'admin';
-// $db['default']['password'] = '';
-$db['default']['database'] = 'quiz';
+ // $db['default']['password'] = 'admin';
+$db['default']['password'] = '';
+$db['default']['database'] = 'freedomwall';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

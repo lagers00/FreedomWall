@@ -11,10 +11,21 @@
 	});
 
 	postButton.click(function()	{
-		postFooter.hide();
-		postBox.val("");
-		usernameField.val("");
-	});
+		var usernameVal = usernameField.val();
+		var postVal = postBox.val();
 
-	
+		$.ajax({
+			url: "/FreedomWall/index.php/wall/insertPost/"+usernameVal+"/"+postVal,
+			success: function()	{
+				alert('yes');	
+				postBox.val("");
+				usernameField.val("");
+				postFooter.hide();		
+			},
+			error: function()	{
+				alert('no');
+			}
+		});
+	});	
+
 })();
